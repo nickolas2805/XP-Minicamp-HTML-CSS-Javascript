@@ -1,0 +1,41 @@
+<html>
+    <script>
+        //SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO, DIVISÃO, RESTO, PORCENTAGEM
+        function funSoma(num1,num2){
+            return (num1 + num2);
+        }
+        function funSubtracao(num1,num2){
+            return num1 - num2;
+        }
+        function funMultiplicacao(num1,num2){
+            return num1 * num2;
+        }
+        function funDivisao(num1,num2){
+            return num1 / num2;
+        }
+        function funResto(num1,num2){
+            return num1 % num2;
+        }
+        function funPorcentagem(num1,num2){
+            return num1 * num2 / 100;
+        }
+
+        function calculadora(num1, operacao, num2){
+            if (operacao === "SOMA"){
+                resultado = funSoma(num1, num2);
+            } else if (operacao === "-"){
+                resultado = funSubtracao(num1,num2)
+            } else if (operacao === "*"){
+                resultado = funMultiplicacao(num1,num2)
+            } else if (operacao ==="/"){
+                resultado = funDivisao(num1,num2)
+            } else if (operacao === "RESTO"){
+                resultado = funResto(num1,num2)
+            } else if (operacao === "%"){
+                resultado = funPorcentagem(num1,num2)
+            } else {
+                console.log("Operação inválida")
+            }
+        }
+    </script>
+</html>
