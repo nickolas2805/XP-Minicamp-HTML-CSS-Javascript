@@ -6,7 +6,6 @@
         // se for divisivel por mais do que ele mesmo não é primo, se for só por 1 e por ele mesmo ai é primo
         
         function testaNumeroPrimo(numero){
-            var cont = 0;
             for (var numeroBase = 2; numeroBase < numero; numeroBase++){
                if (numero % numeroBase == 0 || numero === 1){
                     return console.log("O numero " + (numero) + " não é primo");
