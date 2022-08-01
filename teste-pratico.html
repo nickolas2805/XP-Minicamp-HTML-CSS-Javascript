@@ -1,23 +1,18 @@
-
+<!DOCTYPE html>
 <html>
     <script>
-        // dividir o número por todos até ele mesmo
-        // verificar pir quantos ele foi divisivel
-        // se for divisivel por mais do que ele mesmo não é primo, se for só por 1 e por ele mesmo ai é primo
-        
         function testaNumeroPrimo(numero){
-            for (var numeroBase = 2; numeroBase < numero; numeroBase++){
-               if (numero % numeroBase == 0 || numero === 1){
-                    return console.log("O numero " + (numero) + " não é primo");
+            for (var auxiliar = 2; auxiliar < numero; auxiliar++){
+                if (numero % auxiliar ===  0){
+                    var ePrimo = 0;
                     break;
-               } else {
-                    var ePrimo = 1;
-               } 
+                }
             }
-            if (ePrimo === 1 || numero === 2){
-                return console.log("O numero " + (numero) + " é primo");
+            if (ePrimo === 0 || numero <= 1){
+                console.log("O numero " + (numero) + " não é primo");
+            } else {
+                console.log("O numero " + (numero) + " é primo");
             }
-
         }
     </script>
 </html>
